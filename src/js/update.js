@@ -15,14 +15,14 @@ const defaultStages = {
 const updateOptions = {
     gitRepo: "electron-updater", // [Required] Your Repo Name
     gitUsername: "emrecaliskan35",  // [Required] Your GitHub Username.
-    appName: "eimza-app", //[Required] The Name of the app archive and the app folder.
-    appExecutableName: "eimza-app.dmg", //[Required] The Executable of the Application to be Run after updating.
+    //isGitRepoPrivate: true,
+    //gitRepoToken: "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",
+    appName: "zirve-bilgisayar-imza-gereci", //[Required] The Name of the app archive and the app folder.
+    appExecutableName: "zirve-bilgisayar-imza-gereci.exe", //[Required] The Executable of the Application to be Run after updating.
 
     progressBar: document.getElementById("download"), // {Default is null} [Optional] If Using Electron with a HTML Progressbar, use that element here, otherwise ignore
     label: document.getElementById("download-label"), // {Default is null} [Optional] If Using Electron, this will be the area where we put status updates using InnerHTML
     stageTitles: defaultStages, // {Default is defaultStages} [Optional] Sets the Status Title for Each Stage
 };
 
-uaup.Update({
-
-});
+uaup.Update(updateOptions);
